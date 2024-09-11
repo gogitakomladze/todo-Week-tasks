@@ -1,6 +1,6 @@
 import { Header } from "./header"
 import { Body } from "./body"
-import { Bottom } from "./bottom"
+import { Bottom } from "@src/bottom"
 function App() {
 
   return (
