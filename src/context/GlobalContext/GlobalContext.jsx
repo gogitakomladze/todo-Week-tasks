@@ -13,18 +13,18 @@ const weeks_initial = [
 
 const days_initial = [
         // Days for week 1
-        {id: "day-1", weekId: "week-id-1", day: 1 },
-        {id: "day-2", weekId: "week-id-1", day: 2 },
-        {id: "day-3", weekId: "week-id-1", day: 3 },
-        {id: "day-4", weekId: "week-id-1", day: 4 },
-        {id: "day-5", weekId: "week-id-1", day: 5 },
+        {id: "day-1", weekId: "week-id-1", day: "1 Exsample" },
+        {id: "day-2", weekId: "week-id-1", day: "2 Exsample" },
+        {id: "day-3", weekId: "week-id-1", day: "3 Exsample" },
+        {id: "day-4", weekId: "week-id-1", day: "4 Exsample"},
+        {id: "day-5", weekId: "week-id-1", day: "5 Exsample" },
     
         // Days for week 2
-        {id: "day-6", weekId: "week-id-2", day: 1 },
-        {id: "day-7", weekId: "week-id-2", day: 2 },
-        {id: "day-8", weekId: "week-id-2", day: 3 },
-        {id: "day-9", weekId: "week-id-2", day: 4 },
-        {id: "day-10", weekId: "week-id-2", day: 5 },
+        {id: "day-6", weekId: "week-id-2", day: "6 Exsample" },
+        {id: "day-7", weekId: "week-id-2", day: "7 Exsample" },
+        {id: "day-8", weekId: "week-id-2", day: "8 Exsample" },
+        {id: "day-9", weekId: "week-id-2", day: "9 Exsample" },
+        {id: "day-10", weekId: "week-id-2", day: "10 Exsample" },
         
 ];
 
@@ -43,6 +43,9 @@ export function GlobalProvider({ children }) {
     const [days, setDays] = useState(days_initial);
     const [tasks, setTasks] = useState([]);
 
+    const [currentWeek, setCurrentWeek] = useState();
+    console.log(currentWeek);
+    
     return (
 
      <GlobalContext.Provider
@@ -52,8 +55,9 @@ export function GlobalProvider({ children }) {
         days,
         setDays,
         tasks,
-        setTasks
-
+        setTasks,
+        currentWeek,
+        setCurrentWeek
       }}>{children}</GlobalContext.Provider>
     )
 }

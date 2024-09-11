@@ -1,5 +1,4 @@
-import { ChooseWeek } from "./components/ChooseWeek"
-
+import { ChooseWeek } from "@src/components/ChooseWeek"
 function App() {
 
   return (
