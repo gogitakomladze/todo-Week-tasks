@@ -1,14 +1,11 @@
-import { Header } from "./header"
-import { Body } from "./body"
-import { Bottom } from "@src/bottom"
+import { ChooseWeek } from "./components/ChooseWeek"
+
 function App() {
 
   return (
-    <>
-  <Header/>
-  <Body/>
-   <Bottom/>  
-      </>
+    <> 
+    <ChooseWeek />
+    </>
   )
 }
 
