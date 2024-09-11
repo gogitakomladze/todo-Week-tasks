@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const weeks_initial = [
     {
@@ -11,22 +11,22 @@ const weeks_initial = [
     },
 ];
 
-const days_initial = [
-        // Days for week 1
-        {id: "day-1", weekId: "week-id-1", day: "1 Exsample" },
-        {id: "day-2", weekId: "week-id-1", day: "2 Exsample" },
-        {id: "day-3", weekId: "week-id-1", day: "3 Exsample" },
-        {id: "day-4", weekId: "week-id-1", day: "4 Exsample"},
-        {id: "day-5", weekId: "week-id-1", day: "5 Exsample" },
+// const days_initial = [
+//         // Days for week 1
+//         {id: "day-1", weekId: "week-id-1", day: "1 Exsample" },
+//         {id: "day-2", weekId: "week-id-1", day: "2 Exsample" },
+//         {id: "day-3", weekId: "week-id-1", day: "3 Exsample" },
+//         {id: "day-4", weekId: "week-id-1", day: "4 Exsample"},
+//         {id: "day-5", weekId: "week-id-1", day: "5 Exsample" },
     
-        // Days for week 2
-        {id: "day-6", weekId: "week-id-2", day: "6 Exsample" },
-        {id: "day-7", weekId: "week-id-2", day: "7 Exsample" },
-        {id: "day-8", weekId: "week-id-2", day: "8 Exsample" },
-        {id: "day-9", weekId: "week-id-2", day: "9 Exsample" },
-        {id: "day-10", weekId: "week-id-2", day: "10 Exsample" },
+//         // Days for week 2
+//         {id: "day-6", weekId: "week-id-2", day: "6 Exsample" },
+//         {id: "day-7", weekId: "week-id-2", day: "7 Exsample" },
+//         {id: "day-8", weekId: "week-id-2", day: "8 Exsample" },
+//         {id: "day-9", weekId: "week-id-2", day: "9 Exsample" },
+//         {id: "day-10", weekId: "week-id-2", day: "10 Exsample" },
         
-];
+// ];
 
 
 export const GlobalContext = createContext({
@@ -40,12 +40,17 @@ export const GlobalContext = createContext({
 
 export function GlobalProvider({ children }) {
     const [weeks, setWeeks] = useState(weeks_initial);
-    const [days, setDays] = useState(days_initial);
+    const [days, setDays] = useState([]);
     const [tasks, setTasks] = useState([]);
 
     const [currentWeek, setCurrentWeek] = useState();
-    console.log(currentWeek);
-    
+
+    useEffect(() => {
+        if(currentWeek) {
+    setDays(days_initial.filter( (day) => day.weekId === currentWeek));
+    }
+    },[currentWeek]) 
+         
     return (
 
      <GlobalContext.Provider
