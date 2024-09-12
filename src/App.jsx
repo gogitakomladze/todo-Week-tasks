@@ -1,9 +1,11 @@
-import { ChooseWeek } from "@src/components/ChooseWeek"
+import { ChooseWeek } from "@src/features/ChooseWeek"
+import { CreateDay } from "@src/features/CreateDay"
 function App() {
 
   return (
     <> 
-    <ChooseWeek />
+     <ChooseWeek />
+    <CreateDay/>
     </>
   )
 }

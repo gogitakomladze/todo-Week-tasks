@@ -1,0 +1,1 @@
+export { Sinput } from "./Sinput.styled";

@@ -44,12 +44,13 @@ export function GlobalProvider({ children }) {
     const [tasks, setTasks] = useState([]);
 
     const [currentWeek, setCurrentWeek] = useState();
+    
 
-    useEffect(() => {
-        if(currentWeek) {
-    setDays(days_initial.filter( (day) => day.weekId === currentWeek));
-    }
-    },[currentWeek]) 
+    // useEffect(() => {
+    //     if(currentWeek) {
+    // setDays(days_initial.filter( (day) => day.weekId === currentWeek));
+    // }
+    // },[currentWeek]) 
          
     return (
 
