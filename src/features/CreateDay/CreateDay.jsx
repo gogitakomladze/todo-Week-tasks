@@ -1,4 +1,4 @@
-import {v4 as uuidv4 } from "uuid"
+import { v4 as uuidv4 } from 'uuid';
 
 import { useContext, useState } from "react"
 import { GlobalContext } from "../../context/GlobalContext"
@@ -12,7 +12,7 @@ const { currentWeek,setDays} = useContext(GlobalContext);
 const [dayName, setdayName] = useState("");
 
 function CreateNewDay() {
-    const newDay = {id: uuidv4, name: dayName, weekId: currentWeek};
+    const newDay = {id: uuidv4(), name: dayName, weekId: currentWeek};
     setDays((prev) => [...prev, newDay])
     setdayName("");
 }
