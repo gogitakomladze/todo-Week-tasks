@@ -1,1 +1,1 @@
-export { SButton } from "./SButton";
+export { SButton } from "./SButton.styled";
