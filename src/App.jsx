@@ -2,17 +2,21 @@ import { ChooseWeek } from "@src/features/ChooseWeek"
 import { CreateDay } from "@src/features/CreateDay"
 import { RenderDays } from "@src/features/RenderDays"
 
-import { SApp } from "@src/App.styled"
+import { SWeek, SApp, SDay } from "./App.styled"
 function App() {
 
   return (
     <SApp> 
-      <div>
-     <ChooseWeek />
-     <CreateDay/>
-     <RenderDays/>
-     </div>
+      <SWeek>
+      <ChooseWeek />
+      </SWeek>
+      <SDay>
+      <CreateDay/>
+      </SDay>
+      <RenderDays/>
+
     </SApp>
+    
   )
 }
 

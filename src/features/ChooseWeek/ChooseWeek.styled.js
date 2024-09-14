@@ -1,19 +1,19 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 
-export const SChooseWeekButton = styled.button`
-cursor: pointer;
-padding: 12px;
-border: solid 1px black;
-background-color: transparent;
-border-radius: 12px;
 
-${({ isactive }) =>
-    isactive
-    ? css`
-       color: white;
-       background-color: black;
-       transition: 1s;
-    `
-    :""}
-` 
+export const SButtoncontainer = styled.div`
+background-color: white;
+display: grid;
+grid-template-columns: auto;
+
+margin-top: 100%;
+`
+
+export const SWeekContainer = styled.div`
+background-color: white;
+h2{
+    background-color: white;
+}
+
+`

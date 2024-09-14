@@ -3,9 +3,10 @@ import { v4 as uuidv4 } from 'uuid';
 import { useContext, useState } from "react"
 import { GlobalContext } from "../../context/GlobalContext"
 
-import { SContainer } from "../../components/SContainer"
 import { Sinput } from "../../components/SInput"
-import { SButton } from "../../components/SButton"
+import { SCreateButtom } from './ScreateDay.styled';
+
+import { SCreateDay } from './ScreateDay.styled';
 
 export function CreateDay()  {
 const { currentWeek,setDays} = useContext(GlobalContext);
@@ -18,9 +19,9 @@ function CreateNewDay() {
 }
 
     return (
-       <SContainer>
+       <SCreateDay>
         <Sinput placeholder="Enter CreateDay" value={dayName} onChange={(e) => setdayName(e.target.value)}/>
-        <SButton disabled={!currentWeek} onClick={CreateNewDay}>CreateDay</SButton>
-       </SContainer> 
+        <SCreateButtom disabled={!currentWeek} onClick={CreateNewDay}>CreateDay</SCreateButtom>
+       </SCreateDay> 
     )
 }

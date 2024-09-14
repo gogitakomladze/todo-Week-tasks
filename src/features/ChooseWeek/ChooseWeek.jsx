@@ -1,14 +1,15 @@
 import React, {useContext} from "react";
 import { GlobalContext } from "../../context/GlobalContext";
 
-import { SContainer } from "@src/components/SContainer";
 import { SButton } from "../../components/SButton";
-
+import { SButtoncontainer , SWeekContainer} from "./ChooseWeek.styled";
 export function ChooseWeek() {
     const {weeks, currentWeek, setCurrentWeek} = useContext(GlobalContext);
     
     return (
-        <SContainer>
+        <SWeekContainer>
+         <h2>Choos Week</h2>
+        <SButtoncontainer>
            {weeks?.map((week, index)=> {    
             const isactive = currentWeek === week.id;  
             return(
@@ -22,7 +23,8 @@ export function ChooseWeek() {
             </SButton>
            )})} 
            
-       </SContainer>
-        
+       </SButtoncontainer>
+       </SWeekContainer>
+
     );
 };

@@ -1,1 +1,0 @@
-export { SContainer } from "./SContainer.styled";

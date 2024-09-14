@@ -6,6 +6,7 @@ padding: 12px;
 border: solid 1px black;
 background-color: transparent;
 border-radius: 12px;
+margin-bottom: 20px;
 
 ${({ isactive }) =>
     isactive
