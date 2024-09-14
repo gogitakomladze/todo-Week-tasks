@@ -6,6 +6,8 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     background-color: #EA5959;
+    
+    font-family: 'Courier New', Courier, monospace;
 
 }
 `

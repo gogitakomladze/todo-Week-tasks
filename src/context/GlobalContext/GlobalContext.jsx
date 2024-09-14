@@ -9,6 +9,26 @@ const weeks_initial = [
         id: "week-id-2",
         name: "მეორე კვირა",
     },
+    {
+        id: "week-id-3",
+        name: "მესამე კვირა",
+    },
+    {
+        id: "week-id-4",
+        name: "მეოთხე კვირა",
+    },
+    {
+        id: "week-id-5",
+        name: "მეხუთე კვირა",
+    },
+    {
+        id: "week-id-6",
+        name: "მეექვსე კვირა",
+    },
+    {
+        id: "week-id-7",
+        name: "მეშვიდე კვირა",
+    },
 ];
 
 // const days_initial = [
