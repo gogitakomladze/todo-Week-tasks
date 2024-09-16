@@ -12,9 +12,8 @@ function App() {
       </SWeek>
       <SDay>
       <CreateDay/>
-      </SDay>
       <RenderDays/>
-
+      </SDay>
     </SApp>
     
   )
