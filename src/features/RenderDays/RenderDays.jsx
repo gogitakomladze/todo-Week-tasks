@@ -1,7 +1,7 @@
 import React, {useContext} from "react"
 import { GlobalContext } from "../../context/GlobalContext"
 
-import { SRenderDay } from "./RenderDay.styled"
+import { SRenderDay, SOneRenderday } from "./RenderDay.styled"
 
 export function RenderDays() {
     const {days, currentWeek} = useContext(GlobalContext)
@@ -10,7 +10,7 @@ export function RenderDays() {
     return (
         <SRenderDay>
             {currentWeekDays?.map((currentWeekDay) => {
-                return <div>{currentWeekDay.name}</div>
+                return <SOneRenderday>{currentWeekDay.name}</SOneRenderday>
             })}
         </SRenderDay>
     )

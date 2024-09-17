@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SCreateDay = styled.div`
 display: inline-flex;
 background-color: white;
+margin-left: 50px;
 
 `
 
