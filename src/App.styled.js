@@ -5,10 +5,9 @@ export const SApp = styled.div`
 display: flex;
 justify-content: center;
 background-color: white;
-width: 80%;
+width: 1400px;
 height: 800px;
-margin-top: 60px;
-margin-left: 11%;
+margin: 3% 11%;
 
 border-radius: 30px;
 `

@@ -8,6 +8,9 @@ export default createGlobalStyle`
     background-color: #EA5959;
     
     font-family: 'Courier New', Courier, monospace;
+    .RenderDayheder{
+        background-color: wheat;
+    }
 
 }
 `

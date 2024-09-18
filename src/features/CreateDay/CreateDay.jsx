@@ -9,7 +9,7 @@ import { SCreateButtom } from './ScreateDay.styled';
 import { SCreateDay } from './ScreateDay.styled';
 
 export function CreateDay()  {
-const { currentWeek,setDays} = useContext(GlobalContext);
+const { currentWeek, setDays} = useContext(GlobalContext);
 const [dayName, setdayName] = useState("");
 
 function CreateNewDay() {

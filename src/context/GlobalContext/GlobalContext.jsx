@@ -65,7 +65,7 @@ export function GlobalProvider({ children }) {
 
     const [currentWeek, setCurrentWeek] = useState();
 
-    console.log(days);
+console.log(tasks);
     
 
     // useEffect(() => {
