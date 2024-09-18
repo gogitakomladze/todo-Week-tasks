@@ -1,4 +1,13 @@
 
+
+import { SRenderDay } from "./RenderDay.styled"
 export function RenderDay({day}) {
-    return <div>{day.name}</div>
+    return (
+        <div>
+            <SRenderDay>
+                <input type="text" />
+                <button>Task</button>
+            </SRenderDay>
+        </div>
+    )
 }

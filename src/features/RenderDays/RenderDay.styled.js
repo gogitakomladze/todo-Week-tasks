@@ -6,6 +6,7 @@ display: grid;
 grid-template-columns: auto auto;
 gap: 30px;
 
+
 margin-top: 70px;
 
 background-color: white;

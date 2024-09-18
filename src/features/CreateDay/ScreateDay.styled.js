@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled ,{css}from "styled-components";
 
 export const SCreateDay = styled.div`
 display: inline-flex;
@@ -16,4 +16,11 @@ border-radius: 10px;
 padding: 10px 20px;
 margin-left: 20px;
 
+${({ disabled }) =>
+    disabled
+    ? css`
+    box-shadow: 0px 0px 10px 5px #EA5959;
+    transition: 1s;
+    `
+    :""}
 `

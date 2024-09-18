@@ -21,7 +21,7 @@ function CreateNewDay() {
     return (
        <SCreateDay>
         <Sinput placeholder="Enter CreateDay" value={dayName} onChange={(e) => setdayName(e.target.value)}/>
-        <SCreateButtom disabled={!currentWeek} onClick={CreateNewDay}>CreateDay</SCreateButtom>
+        <SCreateButtom disabled={!currentWeek | dayName === ""} onClick={CreateNewDay}>CreateDay</SCreateButtom>
        </SCreateDay> 
     )
 }
