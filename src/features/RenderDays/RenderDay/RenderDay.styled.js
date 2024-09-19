@@ -39,3 +39,19 @@ button:hover{
     transition: 0.2s;
 }
 `
+
+export const ScurrentDayTask = styled.div`
+background-color: wheat;
+
+padding-left: 10px;
+padding-right: 10px;
+text-align: center;
+width: 265px;
+height: 100px;
+overflow-x: hidden;
+overflow-y: scroll;
+
+h4{
+    background-color: wheat;
+}
+`
