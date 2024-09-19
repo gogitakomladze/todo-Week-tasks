@@ -42,9 +42,7 @@ button:hover{
 
 export const ScurrentDayTask = styled.div`
 background-color: wheat;
-
-padding-left: 10px;
-padding-right: 10px;
+margin-top: 10px;
 text-align: center;
 width: 265px;
 height: 100px;

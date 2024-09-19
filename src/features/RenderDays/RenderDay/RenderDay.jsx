@@ -25,7 +25,8 @@ export function RenderDay({day}) {
             <ScurrentDayTask>
             {currentDayTasks?.map((currentDayTask) => {
                 return(
-                    <h4>{currentDayTask.name}</h4>
+                    <div><h4>{currentDayTask.name}</h4></div>
+                    
                 )
             })}
             </ScurrentDayTask>
